@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: font1;
+    src: url(fonts/font1.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(fonts/font2.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(fonts/font3.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(fonts/font4.ttf);
+}
+@font-face {
+    font-family: font5;
+    src: url(fonts/font5.ttf);
+}
