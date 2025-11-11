@@ -19,7 +19,7 @@ const offerings = [
             { name: "Funny-Pipe", link: "https://www.toro.com/en/homeowner/irrigation-tubing" },
             { name: "Drip Irrigation", link: "https://www.toro.com/en/homeowner/irrigation-landscape-drip						" },
             { name: "Irrigation Sprinklers Valves", link: "https://www.toro.com/en/homeowner/irrigation-valves" },
-            { name: "Irrigation Sensors For Home SYstems", link: "https://www.toro.com/en/homeowner/irrigation-sensors" },
+            { name: "Irrigation Sensors For Home SYstems", link: "https://www.toro.com/en/professional-contractor/irrigation-sensors-remotes" },
           ],
         },
         {
@@ -39,8 +39,8 @@ const offerings = [
           content: [
             { name: "Field Irrigation Rotors and Sprinklers", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-rotors" },
             { name: "Irrigation Sprays for Sports and Municipalities", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-sprays" },
-            { name: "Drip Irrigation", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-landscape-drip" },
-            { name: "Irrigation Sprinkler Valves", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-valves" },
+            { name: "Drip Irrigation", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-drip" },
+            { name: "Irrigation Sprinkler Valves", link: "https://www.toro.com/en/sports-fields-municipalities/valves" },
             { name: "Irrigation Controllers for Sports", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-controllers" },
             { name: "Irrigation Sensors and Remotes for Sports Fields ", link: "https://www.toro.com/en/sports-fields-municipalities/irrigation-sensors-remotes" },
           ],
@@ -48,10 +48,10 @@ const offerings = [
         {
           label: "Golf Course Irrigation System",
           content: [
-            { name: "Golf Course Irrigation Heads/Sprinklers", link: "https://www.toro.com/en/golf/irrigation-heads" },
+            { name: "Golf Course Irrigation Heads/Sprinklers", link: "https://www.toro.com/en/golf/irrigation_heads" },
             { name: "Golf Irrigation Sprinkler Valves", link: "https://www.toro.com/en/golf/irrigation-valves" },
             { name: "Remote Irrigation Field Controllers", link: "https://www.toro.com/en/golf/irrigation-field-controllers" },
-            { name: "Central Control Systems", link: "https://www.toro.com/en/golf/irrigation-central-control-systems" },
+            { name: "Central Control Systems", link: "https://www.toro.com/en/golf/golf-course-irrigation-control-systems" },
           ],
         },
       ],
@@ -64,7 +64,7 @@ const offerings = [
           content: [
             { name: "Pop-up Sprinklers", link: "https://www.perrot.de/en/main-menu/sports/pop-up-sprinklers" },
             { name: "Mobile Irrigation", link: "https://www.perrot.de/en/main-menu/sports/mobile-irrigation" },
-            { name: "Irrigation Systems for Sports Fields", link: "https://www.perrot.de/en/main-menu/sports/irrigation-systems" },
+            { name: "Irrigation Systems for Sports Fields", link: "https://www.perrot.de/en/main-menu/sports/control-systems" },
           ],
         },
         {
@@ -76,24 +76,24 @@ const offerings = [
         {
           label: "Agriculture",
           content: [
-            { name: "Sprinklers", link: "https://www.perrot.de/en/main-menu/agriculture/sprinklers/mzapt-sprinklers" },
-            { name: "Couplings", link: "https://www.perrot.de/en/main-menu/agriculture/coupling/size-50-216" },
-            { name: "Flat Couplings", link: "https://www.perrot.de/en/main-menu/agriculture/flat-coupling" },
+            { name: "Sprinklers", link: "https://www.perrot.de/en/main-menu/agriculture/sprinklers/impact-sprinklers" },
+            { name: "Couplings", link: "https://www.perrot.de/en/main-menu/agriculture/couplings/steel-size-50-216" },
+            { name: "Flat Couplings", link: "https://www.perrot.de/en/main-menu/agriculture/flat-couplings" },
             { name: "Tripods", link: "https://www.perrot.de/en/main-menu/agriculture/tripods" },
           ],
         },
       ],
     },
     {
-      title: "MCI Flownorex Pump Station",
+      title: "MCI Flowtronex Pump Station",
       subtabs: [
         {
           label: "Pump Station",
           content: [
-            { name: "Golf Course Irrigation Pump Station", link: "https://mciflownorex.com/products/golf-irrigation-pump-station/" },
-            { name: "Landscape Irrigation Pump Station", link: "https://mciflownorex.com/products/landscape-irrigation-pump-station/" },
+            { name: "Golf Course Irrigation Pump Station", link: "https://mciflowtronex.com/products/golf-irrigation-pump-station/" },
+            { name: "Landscape Irrigation Pump Station", link: "https://mciflowtronex.com/products/landscape-irrigation-pump-station/" },
             { name: "Agriculture Pump station ", link: "https://mciflowtronex.com/products/agriculture-pump-station/" },
-            { name: "Municipal Pump Station", link: "https://mciflowtronex.com/products/municipal-pump-station/" },
+            { name: "Municipal Pump Station", link: "https://mciflowtronex.com/products/golf-irrigation-pump-station/" },
             { name: "Irrigation Pump Control", link: "https://mciflowtronex.com/products/irrigation-pump-controls/" },
           ],
         },
@@ -234,7 +234,7 @@ const offerings = [
           transition={{ duration: 0.4 }}
         >
           <a
-            href="https://example.com/supreme/pvc-fittings"
+            href="https://www.supreme-systems.net/en/"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-lg font-semibold text-white  hover:underline"
