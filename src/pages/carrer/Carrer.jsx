@@ -50,7 +50,7 @@ const CareerPage = () => {
       {/* ===== Banner ===== */}
       <div className="relative w-full h-[700px] md:h-[500px] overflow-hidden">
         <img
-          ref={bannerRef}
+           
           src="https://plus.unsplash.com/premium_photo-1661486987044-b1a69b9bbaed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
           alt="Career Banner"
           className="w-full h-full object-cover"

@@ -150,8 +150,8 @@ const AboutSection = () => {
     {
       title: "Mission",
       desc: "Consistently pursue a high level of professionalism.",
-      bottomTitle: "What we focus on",
-      bottomText: "Professionalism • Quality",
+      bottomTitle: " we focus on",
+      bottomText: " Quality",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="12" r="8" />
@@ -177,7 +177,7 @@ const AboutSection = () => {
       title: "Commitment",
       desc: "Competence in the service we render and the products we supply.",
       bottomTitle: "How we deliver",
-      bottomText: "Competence • Reliability",
+      bottomText: "  Reliability",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M20 6L9 17l-5-5" />
@@ -205,8 +205,8 @@ const AboutSection = () => {
 
       {/* Bottom Section */}
       <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
-        <div className="text-xs text-slate-400 uppercase tracking-wide">{item.bottomTitle}</div>
-        <div className="text-xs text-slate-500 text-right">{item.bottomText}</div>
+        <div className="text-[12px] text-slate-400 uppercase tracking-wide">{item.bottomTitle}</div>
+        <div className="text-[10px] text-slate-500 text-right">{item.bottomText}</div>
       </div>
     </div>
   ))}

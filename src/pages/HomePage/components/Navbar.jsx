@@ -1125,82 +1125,83 @@ const Navbar = () => {
   );
 
   // Recursive renderer
-  const renderNestedMenu = (items, level = 0, path = "") =>
+const renderNestedMenu = (items, level = 0, path = "") =>
   items.map((item, idx) => {
-    // create a safer path with a separator so duplicates don't collide
     const labelPath = path ? `${path}/${item.label}` : item.label;
-    // key: prefer item.id if available, otherwise fallback to labelPath + idx
     const key = item.id ? `${item.id}-${labelPath}` : `${labelPath}-${idx}`;
     const isOpen = !!openTabs[labelPath];
 
     return (
       <div key={key} className="px-3 h-fit py-1">
-  {item.children ? (
-    <>
-      <button
-        onClick={() => {
-          // Ek hi level me ek tab open ho
-          setOpenTabs((prev) => {
-            const newOpenTabs = { ...prev };
-            const parentKey = labelPath.split("/").slice(0, -1).join("/") || "root";
+        {item.children ? (
+          <>
+            <button
+              onClick={() => {
+                setOpenTabs((prev) => {
+                  const newOpenTabs = { ...prev };
+                  const parentKey =
+                    labelPath.split("/").slice(0, -1).join("/") || "root";
 
-            // Agar same level par koi open hai to close kar do
-            Object.keys(newOpenTabs).forEach((path) => {
-              const pathParent = path.split("/").slice(0, -1).join("/") || "root";
-              if (pathParent === parentKey && path !== labelPath) {
-                delete newOpenTabs[path];
-              }
-            });
+                  Object.keys(newOpenTabs).forEach((path) => {
+                    const pathParent =
+                      path.split("/").slice(0, -1).join("/") || "root";
+                    if (pathParent === parentKey && path !== labelPath) {
+                      delete newOpenTabs[path];
+                    }
+                  });
 
-            // Current tab toggle
-            if (newOpenTabs[labelPath]) {
-              delete newOpenTabs[labelPath];
-            } else {
-              newOpenTabs[labelPath] = true;
-            }
+                  if (newOpenTabs[labelPath]) {
+                    delete newOpenTabs[labelPath];
+                  } else {
+                    newOpenTabs[labelPath] = true;
+                  }
 
-            return newOpenTabs;
-          });
-        }}
-        className={`flex items-center h-fit justify-between relative z-50 w-full text-left ${
-          level === 0
-            ? "text-gray-300"
-            : level === 1
-            ? "text-gray-400"
-            : "text-gray-500"
-        } hover:text-white transition font-medium`}
-      >
-        {item.label}
-        <Chevron open={isOpen} />
-      </button>
+                  return newOpenTabs;
+                });
+              }}
+              className={`flex items-center justify-between w-full text-left transition font-medium ${
+                level === 0
+                  ? "text-gray-200 text-base" // 🔹 Top-level tabs → uniform font
+                  : level === 1
+                  ? "text-gray-300 text-sm"
+                  : "text-gray-400 text-sm"
+              } hover:text-white`}
+            >
+              {item.label}
+              <Chevron open={isOpen} />
+            </button>
 
-      <div
-        className={`overflow-hidden h-fit relative z-50 transition-all duration-300 ${
-          isOpen ? "min-h-[10px] mt-2" : "max-h-0"
-        }`}
-      >
-        <div
-          style={{ marginLeft: `${(level + 1) * 12}px` }}
-          className="h-fit border-l border-gray-700 pl-3"
-        >
-          {renderNestedMenu(item.children, level + 1, labelPath)}
-        </div>
+            <div
+              className={`overflow-hidden transition-all duration-300 ${
+                isOpen ? "min-h-[10px] mt-2" : "max-h-0"
+              }`}
+            >
+              <div
+                style={{ marginLeft: `${(level + 1) * 12}px` }}
+                className="h-fit border-l border-gray-700 pl-3"
+              >
+                {renderNestedMenu(item.children, level + 1, labelPath)}
+              </div>
+            </div>
+          </>
+        ) : (
+          <a
+            href={item.href}
+            className={`block transition py-1 ${
+              level === 0
+                ? "text-gray-200 text-base" // 🔹 Uniform font for all top-level links
+                : level === 1
+                ? "text-gray-300 text-sm"
+                : "text-gray-400 text-sm"
+            } hover:text-white`}
+          >
+            {item.label}
+          </a>
+        )}
       </div>
-    </>
-  ) : (
-    <a
-      href={item.href}
-      className={`block ${
-        level === 2 ? "text-gray-400" : "text-gray-300"
-      } hover:text-white transition text-sm py-1`}
-    >
-      {item.label}
-    </a>
-  )}
-</div>
-
     );
   });
+
 
 
   return (
@@ -1292,36 +1293,39 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed md:hidden top-0 left-0 w-screen h-screen bg-black z-10 transform transition-transform duration-500 ease-in-out ${
-          mobileOpen ? "translate-y-0" : "-translate-y-full"
-        }`}
+  className={`fixed md:hidden top-0 left-0 w-screen h-screen bg-black z-10 transform transition-transform duration-500 ease-in-out ${
+    mobileOpen ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+  <div className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
+    <h2 className="text-xl font-bold tracking-wide">Menu</h2>
+    <button
+      onClick={() => setMobileOpen(false)}
+      className="text-gray-300 hover:text-white transition"
+    >
+      <svg
+        className="w-7 h-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
       >
-        <div className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
-          <h2 className="text-xl font-bold tracking-wide">Menu</h2>
-          <button
-            onClick={() => setMobileOpen(false)}
-            className="text-gray-300 hover:text-white transition"
-          >
-            <svg
-              className="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
 
-        <div className="px-6 py-6 space-y-3 overflow-y-auto h-[calc(100vh-64px)]">
-          {renderNestedMenu(navItems)}
-        </div>
-      </div>
+  <div className="px-6 py-6 space-y-3 overflow-y-auto h-[calc(100vh-64px)]">
+    <div className="text-base font-medium text-gray-200 space-y-3">
+      {renderNestedMenu(navItems)}
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };

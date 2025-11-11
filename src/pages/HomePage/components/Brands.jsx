@@ -18,6 +18,8 @@ const brands = [
   { src: "/brands/ball.png", link: "https://www.ball-launcher.com/" },
   { src: "/brands/spectrum.png", link: "https://www.specmeters.com/" },
   { src: "/brands/dalton.webp", link: "https://daltoncooper.com/" },
+  { src: "https://gradenturfmachinery.com.au/images/logo-med.png", link: "https://gradenturfmachinery.com.au/" },
+  { src: "Paraide.png", link: "https://www.paraide.com/" },
 ];
 
 export default function BrandsGridPage() {
