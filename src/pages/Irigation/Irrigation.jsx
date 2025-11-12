@@ -15,11 +15,11 @@ const offerings = [
           content: [
             { name: "Irrigation Timers and Controllers", link: "https://www.toro.com/en/professional-contractor/irrigation-controllers" },
             { name: "Irrigation Rotors", link: "https://www.toro.com/en/professional-contractor/irrigation-rotors" },
-            { name: "Irrigation Sprinklers", link: "https://www.toro.com/en/professional-contractor/irrigation-sprays" },
+            { name: "Irrigation Spray Heads", link: "https://www.toro.com/en/professional-contractor/irrigation-sprays" },
             { name: "Funny-Pipe", link: "https://www.toro.com/en/product/I-P-S-Flexible-PVC-Tubing" },
             { name: "Drip Irrigation", link: "https://www.toro.com/en/professional-contractor/irrigation-landscape-drip" },
             { name: "Irrigation Sprinklers Valves", link: "https://www.toro.com/en/agriculture/irrigation-valves" },
-            { name: "Irrigation Sensors For Home SYstems", link: "https://www.toro.com/en/professional-contractor/irrigation-sensors-remotes" },
+            { name: "Irrigation Sensors For Home Systems", link: "https://www.toro.com/en/professional-contractor/irrigation-sensors-remotes" },
           ],
         },
         {
@@ -64,7 +64,7 @@ const offerings = [
           content: [
             { name: "Pop-up Sprinklers", link: "https://www.perrot.de/en/main-menu/sports/pop-up-sprinklers" },
             { name: "Mobile Irrigation", link: "https://www.perrot.de/en/main-menu/sports/mobile-irrigation" },
-            { name: "Irrigation Systems for Sports Fields", link: "https://www.perrot.de/en/main-menu/sports/control-systems" },
+            { name: "Control Systems", link: "https://www.perrot.de/en/main-menu/sports/control-systems" },
           ],
         },
         {

@@ -104,7 +104,7 @@ export const golfCourseData = [
     label: "Dethatcher / Verti-Cutters",
     children: [
       { label: "Graden GS-04 Greens Dethatcher (Walk Behind)", href: "https://gradenturfmachinery.com.au/", img: "https://gradenturfmachinery.com.au/images/csi.png" },
-      { label: "Graden Fairway Dethatcher (Tow Type)", href: "#", img: "https://via.placeholder.com/400x400.png?text=Fairway+Dethatcher" },
+      { label: "Graden Fairway Dethatcher (Tow Type)", href: "https://drive.google.com/file/d/1TdkwsO_bQfJxQuPE6CU8jjW7BwxZUmyD/view?usp=drive_link", img: "https://via.placeholder.com/400x400.png?text=Fairway+Dethatcher" },
       { label: "1st Product VC-60 Verti-Cutter - Fairway", href: "https://1stproducts.com/blog/product_models/vc-60-verti-cutter/", img: "https://1stproducts.com/wp-content/uploads/2019/01/DSC00925-1024x682.jpg" },
       { label: "1st Product VC-40 Verti-Cutter - Fairway", href: "https://1stproducts.com/blog/product_models/vc-40-verti-cutter/", img: "https://1stproducts.com/wp-content/uploads/2020/06/verticutter_0004_DSC00090-1024x683.jpg" },
     ],

@@ -45,7 +45,7 @@ const Navbar = () => {
                 { label: "Toro Groundmaster 3505-D", href: "https://www.toro.com/en/product/30849" },
                 { label: "Toro Groundmaster 4300-D", href: "https://www.toro.com/en/product/30879" },
                 { label: "Toro Groundmaster 4500-D", href: "https://www.toro.com/en/product/30885" },
-                { label: "Toro Groundmaster 4700-D", href: "#vguard" },
+                { label: "Toro Groundmaster 4700-D", href: "https://www.toro.com/en/product/30887" },
                 { label: "Toro Groundmaster 1200", href: "https://www.toro.com/en/product/Groundsmaster-1200-Series?srsltid=AfmBOoo8Pc0ppcFq1i_A4b0Svz08FaIO4fPnmqEJy6zR2tLapivjxT_Q" },
                 { label: "Toro Proline H800", href: "https://www.toro.com/en/product/31051" },
                 { label: "Toro Grounmaster 3200/3300 Series", href: "https://www.toro.com/en/product/31900A" },
@@ -114,7 +114,7 @@ const Navbar = () => {
               label: "Dethatcher / Verti-Cutters",
               children: [
                 { label: "Graden GS-04 Greens Dethatcher (Walk Behind)", href: "https://gradenturfmachinery.com.au/" },
-                { label: "Graden Fairway Dethatcher (Tow Type)", href: "#vguard" },
+                { label: "Graden Fairway Dethatcher (Tow Type)", href: "https://drive.google.com/file/d/1TdkwsO_bQfJxQuPE6CU8jjW7BwxZUmyD/view?usp=drive_link" },
                 { label: "1st Product VC-60 Verti-Cutter - Fairway", href: "https://1stproducts.com/blog/product_models/vc-60-verti-cutter/" },
                 { label: "1st Product VC-40 Verti-Cutter - Fairway", href: "https://1stproducts.com/blog/product_models/vc-40-verti-cutter/" },
               ],
