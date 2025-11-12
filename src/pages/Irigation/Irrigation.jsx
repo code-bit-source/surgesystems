@@ -13,12 +13,12 @@ const offerings = [
         {
           label: "Landscape Irrigation for Homes, Residential, Commercials",
           content: [
-            { name: "Irrigation Timers and Controllers", link: "https://www.toro.com/en/homeowner/irrigation-controllers-timers" },
-            { name: "Irrigation Rotors", link: "https://www.toro.com/en/homeowner/rotors" },
-            { name: "Irrigation Sprinklers", link: "https://www.toro.com/en/homeowner/irrigation-sprinklers-funny-pipe" },
-            { name: "Funny-Pipe", link: "https://www.toro.com/en/homeowner/irrigation-tubing" },
-            { name: "Drip Irrigation", link: "https://www.toro.com/en/homeowner/irrigation-landscape-drip						" },
-            { name: "Irrigation Sprinklers Valves", link: "https://www.toro.com/en/homeowner/irrigation-valves" },
+            { name: "Irrigation Timers and Controllers", link: "https://www.toro.com/en/professional-contractor/irrigation-controllers" },
+            { name: "Irrigation Rotors", link: "https://www.toro.com/en/professional-contractor/irrigation-rotors" },
+            { name: "Irrigation Sprinklers", link: "https://www.toro.com/en/professional-contractor/irrigation-sprays" },
+            { name: "Funny-Pipe", link: "https://www.toro.com/en/product/I-P-S-Flexible-PVC-Tubing" },
+            { name: "Drip Irrigation", link: "https://www.toro.com/en/professional-contractor/irrigation-landscape-drip" },
+            { name: "Irrigation Sprinklers Valves", link: "https://www.toro.com/en/agriculture/irrigation-valves" },
             { name: "Irrigation Sensors For Home SYstems", link: "https://www.toro.com/en/professional-contractor/irrigation-sensors-remotes" },
           ],
         },
