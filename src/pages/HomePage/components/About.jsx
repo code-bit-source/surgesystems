@@ -177,7 +177,7 @@ const AboutSection = () => {
       title: "Commitment",
       desc: "Competence in the service we render and the products we supply.",
       bottomTitle: "How we deliver",
-      bottomText: "  Reliability",
+      bottomText: "Reliability",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M20 6L9 17l-5-5" />

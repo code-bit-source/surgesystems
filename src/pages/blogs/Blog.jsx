@@ -71,7 +71,7 @@ const Blog = () => {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center">
           <h1 className="text-4xl md:text-6xl font-[font1] font-bold text-white uppercase">
-           Surge Golf & Law
+           Surge Golf & Lawn
           </h1>
         </div>
       </div>
